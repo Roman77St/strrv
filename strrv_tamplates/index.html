@@ -1,57 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="css/main/reset.css">
     <link rel="stylesheet" href="css/main/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <a href="#" class="logo">
-                <img src="media/main/stack-books_1.png" alt="Main">
-            </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="mehu__link">One</a>
+    <div class="menu--close menu--open"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="media/main/stack-books_1.png" alt="Main">
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn"> <!-- кнопка меню, можно заменить картинкой. -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__close">
+                            <button class="menu-close__btn">
+                                <img src="media/main/close.png" alt="">
+                            </button>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="mehu__link">One</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="mehu__link">Two</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="mehu__link">Three</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="mehu__link">Four</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="mehu__link">Five</a>
+                        </li>
+                        <li class="mobile-nav">
+                            <ul class="mobile-menu">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Contact us</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Our blog</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Shipping and delivery</a>
+                                </li>
+                                <ul class="mobile-actions">
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="user-actions__link">
+                                            <img src="media/main/basket.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="user-actions__link">
+                                            <img src="media/main/user.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="user-actions__link">
+                                            <img src="media/main/search.png" alt="">
+                                        </a>
+                                </ul>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="user-actions">
+                    <li class="user-actions__item">
+                        <a href="#" class="user-actions__link">
+                            <img src="media/main/basket.png" alt="">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="mehu__link">Two</a>
+                    <li class="user-actions__item">
+                        <a href="#" class="user-actions__link">
+                            <img src="media/main/user.png" alt="">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="mehu__link">Three</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="mehu__link">Four</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="mehu__link">Five</a>
+                    <li class="user-actions__item user-actions__item-search">
+                        <a href="#" class="user-actions__link">
+                            <img src="media/main/search.png" alt="">
+                        </a>
+                        <!-- <search>
+                        <form action="">
+                            <input type="search">
+                            <button type="submit"></button>
+                        </form>
+                    </search> -->
                     </li>
                 </ul>
-            </nav>
-            <ul class="user-actions">
-                <li class="user-actions__item">
-                    <a href="#" class="user-actions__link">
-                        <img src="media/main/basket.png" alt="">
-                    </a>
-                </li>
-                <li class="user-actions__item">
-                    <a href="#" class="user-actions__link">
-                        <img src="media/main/user.png" alt="">
-                    </a>
-                </li>
-                <li class="user-actions__item"></li>
-            </ul>
 
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h1>
+                    <p class="top__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, cupiditate? Temporibus facilis
+                        ullam natus dolorem corporis voluptatibus ad fugit labore.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <blockquote class="blockquote__text">
+            <p>
+                "Lorem ipsum dolor sit corporis amet consectetur adipisicing elit. Assumenda consectetur placeat quis
+                incidunt dolor!"
+            </p>
+        </blockquote>
+        <section class="assortment">
+            <div class="container">
+                <h2 class="assortment__title">Lorem ipsum dolor</h2>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <a href="" class="assortment__item-link">
+                            <img src="media/main/school.png" alt="" class="assortment__img">
+                            <p class="assortment__name">Обучение</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <img src="media/main/keyboard.png" alt="" class="assortment__img">
+                            <p class="assortment__name">Технологии</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <img src="media/main/medicine.png" alt="" class="assortment__img">
+                            <p class="assortment__name">Медицина</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <img src="media/main/game.png" alt="" class="assortment__img">
+                            <p class="assortment__name">Развлечения</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <img src="media/main/running.png" alt="" class="assortment__img">
+                            <p class="assortment__name">Спорт</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title">
+                    What our clients say?
+                </h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <blockquote>
+                            <p class="reviews__text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum ad numquam at qui omnis."
+                            </p>
+                            <cite class="rewiews__name">Alex Pushkin</cite>
+                        </blockquote>
+                    </li>
+                    <li class="reviews__item">
+                        <blockquote>
+                            <p class="reviews__text">
+                                "Lorem ipsum dolor sit amet sert abitun, consectetur adipisicing elit. Soluta, velit. Optio dolor
+                                perspiciatis sequi rerum?"
+                            </p>
+                            <cite class="rewiews__name">Julia Roberts</cite>
+                        </blockquote>
+                    </li>
+                    <li class="reviews__item">
+                        <blockquote>
+                            <p class="reviews__text">
+                                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse officia debitis molestias
+                                eveniet neque!"
+                            </p>
+                            <cite class="rewiews__name">Jo Baiden</cite>
+                        </blockquote>
+                    </li>
+                    <li class="reviews__item">
+                        <blockquote>
+                            <p class="reviews__text">
+                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum suscipit soluta iste!"
+                            </p>
+                            <cite class="rewiews__name">Alex Cendell</cite>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
+
 </body>
+
 </html>

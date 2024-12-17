@@ -1,3 +1,6 @@
 
+/venv/
 /media/
-
+/*.pyc
+/__*__
+strrv_tamplates/media/
