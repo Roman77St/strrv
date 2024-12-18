@@ -192,7 +192,8 @@ body {
 .title {
     text-align: center;
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .reviews__list {
@@ -211,6 +212,15 @@ body {
 
 .rewiews__name {
     font-weight: 500;
+}
+
+.main-blog {
+    padding: 120px 0;
+}
+
+.main-blog__list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {
@@ -374,9 +384,20 @@ body {
         padding: 15px 0;
     }
 
+    .reviews {
+        padding: 10px 0;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
     .reviews__item:last-child,
     .reviews__item:nth-last-child(2) {
         display: none;
+    }
+    .reviews__item {
+        flex-basis: 95%;
     }
 }
 
