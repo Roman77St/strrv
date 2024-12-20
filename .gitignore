@@ -1,6 +1,14 @@
 
 /venv/
 /media/
-/*.pyc
+*.pyc
 /__*__
 strrv_tamplates/media/
+/strrv_env/
+strrv_site/db.sqlite3
+strrv_site/strrv/__pycache__/__init__.cpython-312.pyc
+strrv/__pycache__/
+strrv_site/strrv/__init__.py
+images/
+__pycache__/
+__init__.py
