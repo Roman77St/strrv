@@ -15,13 +15,15 @@
         <h1 class="screen-title">Математика</h1>
         <div class="window">
             <div class="window-title">
-                <p class="screen-title">Ученик {{ user }}</p>
+                <p class="screen-title">{{level}} {{ user }}</p>
                 <div class="screen-title_r1">
                     <div class="r2">
                         <h6>фишки</h6>
                         <p>{{ points }}</p>
                     </div>
-                    <p>Сколько будет?</p>
+                    <div>
+                        <p>Сколько будет?</p>
+                    </div>
                     <img src="{% static "mathematics/images/fish.png" %}" alt="">
                 </div>
             </div>
@@ -29,12 +31,13 @@
             <form action="" method="post">
                     <div class="form-title">
                         <label class="r1" for="answer">{{ task }}</label>
-                        <input class="r1" type="text" id='answer', name="answer" placeholder="? ?">
+                        <input class="r1" type="text" id='answer', name="answer" placeholder="? ?" autofocus>
                         <button class="form-button r1" type="submit">Проверить</button>
                     </div>
                     {% csrf_token %}
                 </form>
-                <a class="form-button" type="">Выйти</a>
+                <p class="message">{{ message }}</p>
+                <a class="form-button" href="{% url "math:mathematics" %}" >Выйти</a>
             </div>
 
     </div>
