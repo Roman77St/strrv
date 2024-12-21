@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -28,7 +29,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">
+                <a href="{% url "main_page" %}" class="logo">
                     <img src="{% static "images/stack-books_1.png" %}" alt="Main">
                 </a>
                 <nav class="menu">
@@ -45,7 +46,7 @@
                             </button>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="mehu__link">One</a>
+                            <a href="{% url "math:mathematics" %}" class="mehu__link">Обучение</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="mehu__link">Two</a>

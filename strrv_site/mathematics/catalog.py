@@ -3,6 +3,8 @@ CATALOG_IMAGES_ROOT =  "mathematics/images/"
 
 refresh_rate_images = 5
 
+DEFAULT_NAME = "Anonimus🗿"
+
 sounds = {
     "ok": "ok.mp3",
     "mistake": "mistake.mp3",

@@ -37,7 +37,13 @@
                     {% csrf_token %}
                 </form>
                 <p class="message">{{ message }}</p>
+                <label>
+                    Эволюция <progress value="{{points}}" max="{{max_points}}"></progress>
+                </label>
                 <a class="form-button" href="{% url "math:mathematics" %}" >Выйти</a>
+
+
+
             </div>
         </div>
         <audio src="{% static sound %}" preload autoplay="autoplay"></audio>

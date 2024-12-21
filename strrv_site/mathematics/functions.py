@@ -1,9 +1,9 @@
 import random
-from .catalog import image_animal, sounds, levels, refresh_rate_images
+from .catalog import image_animal, sounds, levels, refresh_rate_images, DEFAULT_NAME
 
 def save_in_session(request, name, choice_action, choice_level):
     if name == '':
-        request.session['name'] = "Anonimus🗿"
+        request.session['name'] = DEFAULT_NAME
     else:
         request.session['name'] = name
     request.session['choice_action'] = choice_action
@@ -59,8 +59,6 @@ def set_variables(request):
 
 def summator(request):
 
-    
-
     if request.method == 'GET':
         request.session['points'] = 0
         message = '❓'
@@ -101,6 +99,7 @@ def summator(request):
         'task': task,
         'image': image,
         'message': message,
-        'level': levels[request.session['choice_level']]
+        'level': levels[request.session['choice_level']],
+        'max_points': len(image_animal)*refresh_rate_images
     }
     return data

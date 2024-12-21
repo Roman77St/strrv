@@ -1,24 +1,32 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+
 from .functions import save_in_session, summator
+from .functions import DEFAULT_NAME
+
 
 
 def mathematics(request):
+
     if request.method == "POST":
         name = request.POST['name']
         choice_action = request.POST['choice_action']
         choice_level = request.POST['choice_level']
         save_in_session(request, name, choice_action, choice_level)
         return redirect(to=reverse_lazy('math:realisation'))
-    return render(request, 'mathematics/math.html')
+    
+    name = request.session['name'] if request.session['name'] != DEFAULT_NAME else ''
+    name = name.strip().replace(' ', '\xa0')
+
+    context = {
+        'name': name
+    }
+    return render(request, 'mathematics/math.html', context)
 
 def realisation(request):
-    if request.method == "POST":
-        # answer = request.POST['answer']
-        data = summator(request)
 
-    else:
-        data = summator(request)
+    data = summator(request)
+
     context = {
         "user": request.session['name'],
         'points': request.session['points'],
