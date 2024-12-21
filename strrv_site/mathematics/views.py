@@ -5,7 +5,6 @@ from .functions import save_in_session, summator
 
 def mathematics(request):
     if request.method == "POST":
-        # app_summator = Summator(request)
         name = request.POST['name']
         choice_action = request.POST['choice_action']
         choice_level = request.POST['choice_level']
@@ -22,7 +21,6 @@ def realisation(request):
         data = summator(request)
     context = {
         "user": request.session['name'],
-        'sound': 'sound',
         'points': request.session['points'],
     }
 

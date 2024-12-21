@@ -24,12 +24,12 @@
                     <div>
                         <p>Сколько будет?</p>
                     </div>
-                    <img src="{% static "mathematics/images/fish.png" %}" alt="">
+                    <img src="{% static image %}" alt="">
                 </div>
             </div>
-
+            
             <form action="" method="post">
-                    <div class="form-title">
+                <div class="form-title">
                         <label class="r1" for="answer">{{ task }}</label>
                         <input class="r1" type="text" id='answer', name="answer" placeholder="? ?" autofocus>
                         <button class="form-button r1" type="submit">Проверить</button>
@@ -39,9 +39,9 @@
                 <p class="message">{{ message }}</p>
                 <a class="form-button" href="{% url "math:mathematics" %}" >Выйти</a>
             </div>
-
-    </div>
-</section>
-
-
-{% endblock content %}
+        </div>
+        <audio src="{% static sound %}" preload autoplay="autoplay"></audio>
+    </section>
+    
+    
+    {% endblock content %}
