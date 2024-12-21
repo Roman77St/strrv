@@ -90,4 +90,42 @@
     background: rgb(90,90,85);
     color: #fff;
     box-shadow: 0 5px 5px 5px #fff;
+
+}
+
+
+.form-button.r1 {
+    left: 10px;
+    width: 110px;
+}
+
+input.r1 {
+    width: 60px;
+    position: relative;
+    bottom: 2px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.form-title>label.r1 {
+    font-size: 24px;
+}
+
+a.form-button {
+    padding: 3px 0 0 17px;
+    display: block;
+}
+
+.screen-title_r1 {
+    text-align: left;
+    margin-left: 30px;
+    display: flex;
+    gap: 22%;
+}
+
+.screen-title_r1>.r2 {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }

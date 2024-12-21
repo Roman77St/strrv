@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link type="text/css" rel="stylesheet" href="{% static "mathematics/css/style.css" %}">
+{% endblock css %}
+
+{% block font %}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+{% endblock font %}
+
+{% block content %}
+<section class="screen">
+    <div class="container">
+        <h1 class="screen-title">Математика</h1>
+        <div class="window">
+            <div class="window-title">
+                <p class="screen-title">Ученик {{ user }}</p>
+                <div class="screen-title_r1">
+                    <div class="r2">
+                        <h6>фишки</h6>
+                        <p>{{ points }}</p>
+                    </div>
+                    <p>Сколько будет?</p>
+                    <img src="{% static "mathematics/images/fish.png" %}" alt="">
+                </div>
+            </div>
+
+            <form action="" method="post">
+                    <div class="form-title">
+                        <label class="r1" for="answer">{{ task }}</label>
+                        <input class="r1" type="text" id='answer', name="answer" placeholder="? ?">
+                        <button class="form-button r1" type="submit">Проверить</button>
+                    </div>
+                    {% csrf_token %}
+                </form>
+                <a class="form-button" type="">Выйти</a>
+            </div>
+
+    </div>
+</section>
+
+
+{% endblock content %}
