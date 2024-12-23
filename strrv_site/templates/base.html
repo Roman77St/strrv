@@ -10,6 +10,7 @@
     <title>Главная страница</title>
     <link type="text/css" rel="stylesheet" href="{% static "css/reset.css" %}">
     <link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="icon" href="{% static "favicon/favicon.ico" %}"><!-- 32×32 -->
     {% block css %}
     
     {% endblock css %}
@@ -52,7 +53,7 @@
                             <a href="#" class="mehu__link">Two</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="mehu__link">Three</a>
+                            <a href="{% url "ophthalmology:recomend_list" %}" class="mehu__link">Медицина</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="mehu__link">Four</a>

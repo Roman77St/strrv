@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_page.urls')),
     path('math/', include('mathematics.urls', namespace='math')),
+    path('ophthalmology/', include('ophthalmology.urls', namespace='ophthalmology')),
 ]

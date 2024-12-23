@@ -1,6 +1,6 @@
 
-/venv/
-/media/
+venv/
+media/
 *.pyc
 /__*__
 strrv_tamplates/media/
@@ -13,3 +13,4 @@ images/
 __pycache__/
 __init__.py
 sounds/
+migrations/

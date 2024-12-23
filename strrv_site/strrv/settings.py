@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'main_page.apps.MainPageConfig',
     'mathematics.apps.MathematicsConfig',
+    'ophthalmology.apps.OphthalmologyConfig',
 ]
 
 MIDDLEWARE = [

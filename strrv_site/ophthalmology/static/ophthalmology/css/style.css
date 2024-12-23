@@ -1,0 +1,115 @@
+.container.rec {
+    max-width: 1150px;
+}
+
+.breadcrumbs_list {
+    display: flex;
+    margin: 10px 40px;
+}
+
+.breadcrumbs_item {
+    padding-left: 3px;
+    
+}
+
+.breadcrumbs_item.breadcrumbs_item-link {
+    color: blue;
+}
+
+.recomend_content {
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.container_inner {
+    margin: 50px auto;
+    width: 70%;
+    border: 1px solid rgba(146, 146, 146, 0.5);
+    border-radius: 10px;
+    -webkit-box-shadow: -4px 2px 24px -3px rgba(56, 56, 53, 0.48);
+    -moz-box-shadow: -4px 2px 24px -3px rgba(56, 56, 53, 0.48);
+    box-shadow: -4px 2px 24px -3px rgba(56, 56, 53, 0.48);
+    
+}
+
+.block_logo {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    text-align: center; 
+}
+
+.title_mz {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.clin_rec_title {
+    text-align: center;
+    color: #888;
+}
+
+.noz_form_title {
+    text-align: center;
+    margin: 20px 0 50px;
+    color: #034091;
+    font-size: 30px;
+}
+
+.ofic_data_data {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.ofic_data_title.r1 {
+    text-align: center;
+    font-size:  26px;
+    margin: 30px 0 100px;
+}
+
+.ofic_data_hr {
+	margin: 100px 50px;
+	border-top: 4px solid #bbb;
+}
+
+.table_of_contents>h3 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 26px;
+}
+
+.table_of_contents-list {
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 70px;
+    list-style-type: disc;
+    color: #034091;
+    font-weight: 400;
+}
+
+.table_of_contents-item {
+    padding-bottom: 10px;
+}
+
+.table_of_contents-item>a:hover {
+    text-decoration: underline;
+}
+
+.content>h3 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.content_sub>ul {
+    list-style-type: disc;
+    padding-left: 4%;
+    padding-top: 10px;
+    line-height: 200%;
+}
+
+.content_sub>h4 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
