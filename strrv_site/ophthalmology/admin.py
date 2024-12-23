@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Recomendation
+
+
+@admin.register(Recomendation)
+class AdminRecomendation(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ['name']}
+
+

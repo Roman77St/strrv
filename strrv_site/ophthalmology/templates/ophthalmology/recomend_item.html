@@ -24,22 +24,22 @@
                     <h2 class="title_mz">Министерство Здравоохранения Российской Федерации</h2>
                 </div>
                 <h5 class="clin_rec_title">Клинические рекомендации</h5>
-                <h3 class="noz_form_title">Конъюнктивиты</h3>
+                <h3 class="noz_form_title">{{ recomend.name }}</h3>
                 <div class="ofic_data">
                     <ul class="ofic_data_list">
                         <li class="ofic_data_title">Год утверждения (частота пересмотра)</li>
-                        <li class="ofic_data_data">2024</li>
+                        <li class="ofic_data_data">{{recomend.year_of_approval}}</li>
                         <li class="ofic_data_title">Пересмотр не позднее:</li>
-                        <li class="ofic_data_data">2026</li>
+                        <li class="ofic_data_data">{{ recomend.year_of_revision }}</li>
                         <li class="ofic_data_title">ID</li>
-                        <li class="ofic_data_data">629_2</li>
+                        <li class="ofic_data_data">{{recomend.rec_id}}</li>
                         <li class="ofic_data_title">Возрастная категория</li>
-                        <li class="ofic_data_data">Взрослые, дети</li>
+                        <li class="ofic_data_data">{{recomend.age_category}}</li>
                         <li class="ofic_data_title">Специальность:</li>
-                        <li class="ofic_data_data"></li>
+                        <li class="ofic_data_data">{{recomend.speciality}}</li>
                         <li class="ofic_data_title">Разработчик клинической рекомендации</li>
-                        <li class="ofic_data_data">Общероссийская общественная организация "Ассоциация врачей-офтальмологов", Общероссийская общественная организация «Общество офтальмологов России»</li>
-                        <li class="ofic_data_title r1">Одобрены</li>
+                        <li class="ofic_data_data">{{ recomend.developer}}</li>
+                        <li class="ofic_data_title r1">{{ recomend.status}}</li>
                     </ul>
                     <hr class="ofic_data_hr">
                 </div>

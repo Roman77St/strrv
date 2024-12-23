@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 
 
-
 {% block content %}
-<a href="{% url "ophthalmology:recomend_item" %}">Главная/Клинические рекомендации/Конъюнктивиты</a>
+{% for rec in recomendations %}
+<li>
+    <a href="{% url "ophthalmology:recomend_item" rec.slug %}">{{rec.name}}</a>
+</li>
+{% endfor %}
 {% endblock content %}
 
