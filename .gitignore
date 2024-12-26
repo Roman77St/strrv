@@ -14,3 +14,5 @@ __pycache__/
 __init__.py
 sounds/
 migrations/
+strrv_site/.env
+strrv_site/for_test.py

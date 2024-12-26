@@ -15,8 +15,10 @@ def mathematics(request):
         save_in_session(request, name, choice_action, choice_level)
         return redirect(to=reverse_lazy('math:realisation'))
     
-    name = request.session['name'] if request.session['name'] != DEFAULT_NAME else ''
+    name = request.session.get('name')
     name = name.strip().replace(' ', '\xa0')
+    if name == DEFAULT_NAME:
+        name = ''
 
     context = {
         'name': name

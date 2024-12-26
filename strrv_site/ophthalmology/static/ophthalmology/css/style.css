@@ -100,16 +100,30 @@
     margin: 20px auto;
     font-size: 26px;
     margin-top: 40px;
+    padding-bottom: 1em;
 }
 
-.content_sub>ul {
+.content>h4 {
+    padding-bottom: 1em;
+}
+
+.content>div>ul {
     list-style-type: disc;
     padding-left: 4%;
-    padding-top: 10px;
-    line-height: 200%;
+    line-height: 150%;
+    padding-bottom: 1em;
 }
 
-.content_sub>h4 {
-    margin-bottom: 30px;
-    margin-top: 10px;
+.content>div>p {
+    padding-bottom: 1em;
+}
+
+.cotent>div>br {
+    padding-bottom: 1em;
+}
+
+.content>div>ol {
+    padding-left: 4%;
+    line-height: 150%;
+    padding-bottom: 1em;
 }
