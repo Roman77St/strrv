@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .container.rec {
     max-width: 1150px;
 }
@@ -91,6 +95,10 @@
     padding-bottom: 10px;
 }
 
+.table_of_contents-item>a {
+    scroll-behavior: smooth;
+}
+
 .table_of_contents-item>a:hover {
     text-decoration: underline;
 }
@@ -101,10 +109,12 @@
     font-size: 26px;
     margin-top: 40px;
     padding-bottom: 1em;
+
 }
 
 .content>h4 {
     padding-bottom: 1em;
+
 }
 
 .content>div>ul {
@@ -126,4 +136,11 @@
     padding-left: 4%;
     line-height: 150%;
     padding-bottom: 1em;
+}
+
+
+.content>div table, th, td {
+    border: 1px solid grey;
+    text-align: left;
+    padding: 5px;
 }

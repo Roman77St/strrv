@@ -3,7 +3,7 @@ from django.db.models.query import QuerySet
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 
-from .models import Recomendation
+from .models import Recomendation, CRTableOfContent
 
 
 def recomend_list(request):
@@ -23,3 +23,9 @@ class RecomendItemView(DetailView):
     def get_object(self, queryset=None):
         recomend = Recomendation.objects.get(slug=self.kwargs.get(self.slug_url_kwarg))
         return recomend
+    
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['table_of_content'] = CRTableOfContent.objects.all()
+        return context
+    

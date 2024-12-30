@@ -69,6 +69,7 @@ class CRContent(models.Model):
     prevention = models.TextField(blank=True, verbose_name="Профилактика")
     organization_of_medical_care = models.TextField(blank=True, verbose_name="Организация оказания мед. помощи")
     additional_information = models.TextField(blank=True, verbose_name="Доп. информация")
+    quality_assessment = models.TextField(blank=True, verbose_name="Оценка качества")
 
     class Meta: 
         db_table = 'cr_content'
@@ -78,3 +79,13 @@ class CRContent(models.Model):
     def __str__(self):
         return str(self.nosological_form)
     
+class CRTableOfContent(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Раздел кратко")
+    text = models.CharField(max_length=200, verbose_name="Раздел полное написание", blank=True)
+    link = models.CharField(max_length=100, blank=True, verbose_name='ID для внутренней ссылки')
+    class Meta: 
+        db_table = 'cr_table_of_content'
+        verbose_name = "Клинические рекомендации - оглавление"
+
+    def __str__(self):
+        return str(self.title)

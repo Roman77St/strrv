@@ -47,55 +47,54 @@
                 <div class="table_of_contents">
                     <h3>Оглавление</h3>
                     <ul class="table_of_contents-list">
-                        <li class="table_of_contents-item"><a href="#">1. Краткая информация по заболеванию или состоянию (группы заболеваний или состояний)</a></li>
-                        <li class="table_of_contents-item"><a href="#">1.1 Определение заболевания или состояния (группы заболеваний или состояний)1.1 Определение заболевания или состояния (группы заболеваний или состояний)</a></li>
-                        <li class="table_of_contents-item"><a href="#">1.2 Этиология и патогенез заболевания или состояния (группы заболеваний или состояний)</a></li>
-                        <li class="table_of_contents-item"><a href="#">1.3 Эпидемиология заболевания или состояния (группы заболеваний или состояний)</a></li>
-                        <li class="table_of_contents-item"><a href="#">1.4 Особенности кодирования заболевания или состояния (группы заболеваний или состояний) по Международной статистической классификации болезней и проблем, связанных со здоровьем</a></li>
+
+                        {% for chapter in table_of_content %}
+                        <li class="table_of_contents-item"><a href="#{{chapter.link}}">{{chapter.title}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="content">
-                    <h3>Список сокращений</h3>
+                    <h3 id="cont_list">Список сокращений</h3>
                     <div>{{ recomend.cr_content.list_of_abbreviations | markdown }}</div>
-                    <h3>Термины и определения</h3>
+                    <h3 id="cont_term">Термины и определения</h3>
                     <div> {{ recomend.cr_content.terms_and_definitions | markdown }}</div>
-                    <h3>1. Краткая информация</h3>
-                    <h4>1.1 Определение заболевания или состояния (группы заболеваний или состояний)</h4>
+                    <h3 id="cont_1">1. Краткая информация</h3>
+                    <h4 id="cont_1.1">1.1 Определение заболевания или состояния (группы заболеваний или состояний)</h4>
                     <div>{{ recomend.cr_content.definition_of_state | markdown }}</div>
-                    <h4>1.2 Этиология и патогенез заболевания или состояния (группы заболеваний или состояний)</h4>
+                    <h4 id="cont_1.2">1.2 Этиология и патогенез заболевания или состояния (группы заболеваний или состояний)</h4>
                     <div>{{ recomend.cr_content.etiology_and_pathogenesis | markdown }}</div>
-                    <h4>1.3 Эпидемиология заболевания или состояния</h4>
+                    <h4 id="cont_1.3">1.3 Эпидемиология заболевания или состояния</h4>
                     <div>{{ recomend.cr_content.epidemiology | markdown }}</div>
-                    <h4>1.4 Особенности кодирования заболевания или состояния</h4>
+                    <h4 id="cont_1.4">1.4 Особенности кодирования заболевания или состояния</h4>
                     <div>{{ recomend.cr_content.coding | markdown }}</div>
-                    <h4>1.5 Классификация заболевания или состояния</h4>
+                    <h4 id="cont_1.5">1.5 Классификация заболевания или состояния</h4>
                     <div>{{ recomend.cr_content.classification | markdown }}</div>
-                    <h4>1.6 Клиническая картина заболевания или состояния</h4>
+                    <h4 id="cont_1.6">1.6 Клиническая картина заболевания или состояния</h4>
                     <div>{{ recomend.cr_content.clinical_picture | markdown }}</div>
-                    <h3>2. Диагностика</h3>
+                    <h3 id="cont_2">2. Диагностика</h3>
                     <div>{{ recomend.cr_content.diagnostics | markdown }}</div>
-                    <h4>2.1 Жалобы и анамнез</h4>
+                    <h4 id="cont_2.1">2.1 Жалобы и анамнез</h4>
                     <div>{{ recomend.cr_content.complaints_and_anamnesis | markdown }}</div>
-                    <h4>2.2 Физикальное обследование</h4>
+                    <h4 id="cont_2.2">2.2 Физикальное обследование</h4>
                     <div>{{ recomend.cr_content.physical_examination | markdown }}</div>
-                    <h4>2.3 Лабораторные исследования</h4>
+                    <h4 id="cont_2.3">2.3 Лабораторные исследования</h4>
                     <div>{{ recomend.cr_content.laboratory_research | markdown }}</div>
-                    <h4>2.4 Инструментальные исследования</h4>
+                    <h4 id="cont_2.4">2.4 Инструментальные исследования</h4>
                     <div>{{ recomend.cr_content.instrumental_research | markdown }}</div>
-                    <h4>2.5 Иные исследования</h4>
+                    <h4 id="cont_2.5">2.5 Иные исследования</h4>
                     <div>{{ recomend.cr_content.other_studies | markdown }}</div>
-                    <h3>3. Лечение</h3>
+                    <h3 id="cont_3">3. Лечение</h3>
                     <div>{{ recomend.cr_content.treatment | markdown }}</div>
-                    <h3>4.Реабилитация</h3>
+                    <h3 id="cont_4">4.Реабилитация</h3>
                     <div>{{ recomend.cr_content.rehabilitation | markdown }}</div>
-                    <h3>5. Профилактика</h3>
+                    <h3 id="cont_5">5. Профилактика</h3>
                     <div>{{ recomend.cr_content.prevention | markdown }}</div>
-                    <h3>6. Организация оказания медицинской помощи</h3>
+                    <h3 id="cont_6">6. Организация оказания медицинской помощи</h3>
                     <div>{{ recomend.cr_content.organization_of_medical_care | markdown }}</div>
-                    <h3>7. Дополнительная информация</h3>
+                    <h3 id="cont_7">7. Дополнительная информация</h3>
                     <div>{{ recomend.cr_content.additional_information | markdown }}</div>
-
-
+                    <h3 id="cont_crit">Критерии оценки качества медицинской помощи</h3>
+                    <div>{{ recomend.cr_content.quality_assessment | markdown }}</div>
 
                 </div>
     

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Recomendation, CRContent
+from .models import Recomendation, CRContent, CRTableOfContent
 
 
 @admin.register(Recomendation)
@@ -9,4 +9,8 @@ class RecomendationAdmin(admin.ModelAdmin):
 
 @admin.register(CRContent)
 class CRContentAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(CRTableOfContent)
+class CRTableOfContentAdmin(admin.ModelAdmin):
     pass
